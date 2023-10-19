@@ -12,8 +12,8 @@ const areaSmallPizza = Math.PI * (smallPizzaSize / 2) ** 2;
 const areaLargePizza = Math.PI * (largePizzaSize / 2) ** 2;
 console.log(areaSmallPizza, areaLargePizza);
 // 2. What is the cost per square inch of each pizza?
-const smallCostPerIn = areaSmallPizza / 16.99;
-const largeCostPerIn = areaLargePizza / 19.99;
+const smallCostPerIn = 16.99 / areaSmallPizza;
+const largeCostPerIn = 19.99 / areaLargePizza;
 console.log(smallCostPerIn, largeCostPerIn);
 // 3. Using the Math object, put together a code snippet
 // that allows you to draw a random card with a value
@@ -25,6 +25,7 @@ console.log(a, b, c);
 // 4. Draw 3 cards and use Math to determine the highest
 // card
 const highestNumber = Math.max(a, b, c);
+console.log(highestNumber);
 /**
  * ADDRESS LINE
  */
@@ -51,6 +52,7 @@ console.log(envelope);
 // Hint: use indexOf, slice, and / or substring
 const getfirstName = envelope.indexOf(firstName);
 const extractFirstName = envelope.slice(0, 4);
+console.log(extractFirstName);
 /**
  * FIND THE MIDDLE DATE
  */
@@ -64,3 +66,4 @@ const extractFirstName = envelope.slice(0, 4);
 const startDate = new Date(2020, 1, 1);
 const endDate = new Date(2020, 3, 1);
 const middleDate = new Date((startDate.getTime() + endDate.getTime()) / 2);
+console.log(middleDate);
