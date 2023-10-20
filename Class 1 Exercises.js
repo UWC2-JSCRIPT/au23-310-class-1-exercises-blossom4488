@@ -51,14 +51,9 @@ console.log(envelope);
 // Write code that is able to extract the first name from this string into a variable.
 // Hint: use indexOf, slice, and / or substring
 
-//this is what I did previously:
-const getfirstName = envelope.indexOf(firstName);
-const extractFirstName = envelope.slice(0, 4);
-console.log(extractFirstName);
-
-//10/19/2023 figuring out this problem again
 const sentence = "Johnny Bravo \n1234 Flower St. \nLas Vegas, NV 89123";
 const getSpace = sentence.substring(0, sentence.indexOf(" "));
+console.log(getSpace);
 
 /**
  * FIND THE MIDDLE DATE
