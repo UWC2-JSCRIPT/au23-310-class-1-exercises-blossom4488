@@ -50,9 +50,16 @@ console.log(envelope);
 //
 // Write code that is able to extract the first name from this string into a variable.
 // Hint: use indexOf, slice, and / or substring
+
+//this is what I did previously:
 const getfirstName = envelope.indexOf(firstName);
 const extractFirstName = envelope.slice(0, 4);
 console.log(extractFirstName);
+
+//10/19/2023 figuring out this problem again
+const sentence = "firstName lastName \n streetAddress \n city, state zipCode";
+const getSpace = envelope.indexOf(" ");
+const extractFirstName = envelope.substring(0, getSpace);
 /**
  * FIND THE MIDDLE DATE
  */
@@ -63,7 +70,7 @@ console.log(extractFirstName);
 
 // Starting hint:
 // const endDate = new Date(2019, 3, 1);
-const startDate = new Date(2020, 1, 1);
+const startDate = new Date(2020, 0, 1);
 const endDate = new Date(2020, 3, 1);
 const middleDate = new Date((startDate.getTime() + endDate.getTime()) / 2);
 console.log(middleDate);
