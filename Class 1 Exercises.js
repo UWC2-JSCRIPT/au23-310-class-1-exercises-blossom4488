@@ -57,9 +57,9 @@ const extractFirstName = envelope.slice(0, 4);
 console.log(extractFirstName);
 
 //10/19/2023 figuring out this problem again
-const sentence = "firstName lastName \n streetAddress \n city, state zipCode";
-const getSpace = envelope.indexOf(" ");
-const extractFirstName = envelope.substring(0, getSpace);
+const sentence = "Johnny Bravo \n1234 Flower St. \nLas Vegas, NV 89123";
+const getSpace = sentence.substring(0, sentence.indexOf(" "));
+
 /**
  * FIND THE MIDDLE DATE
  */
